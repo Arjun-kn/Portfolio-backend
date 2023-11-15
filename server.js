@@ -10,11 +10,7 @@ let app = express();
 
 // middleware
 // Add this line to your server code
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
+app.use(cors())
 
 app.use(express.json());
 
